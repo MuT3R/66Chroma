@@ -29,6 +29,10 @@ for i in {0..30};do
     fi
 done
 
+# Create wp source container
+
+mkdir -p /var/www/html/wp/
+
 
 # Wordpress provisioning
 
