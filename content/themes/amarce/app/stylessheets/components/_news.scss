@@ -1,0 +1,197 @@
+.news-title {
+  text-align: center;
+  color: $color-tri;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+// Mobile 
+.news {
+  margin-bottom: 10px;
+  margin-top: 2em;
+  text-align: center;
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  .news-content {
+    &__title {
+      text-align: center;
+      color: $color-sec;
+      font-weight: 900;
+    }
+    &__text {
+      padding-left: 0.5em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+      font-weight: 600;
+      a {
+        margin-left: 5px;
+        font-size: $font-size-medium;
+        transition: all 0.2s;
+        display: inline-block;
+        &:hover {  
+          transform: scale(1.2);
+          
+        } 
+      }
+    }
+  }
+}
+
+
+
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .news {
+    
+    &__image {
+      width: 80%;
+      margin: auto;
+      img {
+        height: 40%;
+      }
+    }
+    .news-content {
+      padding-top: 1.2em;
+      &__title {
+      }
+      &__text {
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+      }
+      &__link {
+      padding-right: 1.8em;
+        a {
+        }
+      }
+    }
+  }
+}
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .news {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1.2em 1.2em;
+    &__image {
+      margin: auto;
+      margin-top: 1.8em;
+      width: 40%;
+      img {
+        
+      }
+    }
+    .news-content {
+      padding-top: 1.2em;
+      width: 60%;
+
+      &__title {
+      }
+      &__text {
+        text-align: left;
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+      }
+      &__link {
+      padding-right: 1.8em;
+        a {
+        }
+      }
+    }
+  }
+}
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .news {
+    &__image {
+      width: 40%;
+      margin: auto;
+      img {
+      width: 100%;
+      }
+    }
+    .news-content {
+      padding-top: 1.2em;
+      width: 60%;
+      padding-right: 1.8em;
+
+      &__title {
+        text-align: left;
+
+      }
+      &__text {
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+      }
+      &__link {
+      padding-right: 1.8em;
+        a {
+        }
+      }
+    }
+  }
+}
+
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .news {
+    &__image {
+      width: 40%;
+
+      img {
+      width: 100%;
+      }
+    }
+    .news-content {
+      padding-top: 1.2em;
+      padding-left: 1.8em;
+      width: 60%;
+      &__title {
+        text-align: left;
+
+      }
+      &__text {
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+      }
+      &__link {
+      padding-right: 1.8em;
+        a {
+        }
+      }
+    }
+  }
+}
+
+// Desktop ++
+@media (min-width: $breakpoint-4k) {
+  .news {
+    padding: 4.2em 10em;
+    &__image {
+      width: none;
+      img {
+      width: 100%;
+      }
+    }
+    .news-content {
+      padding: 2.8em;
+      width: 60%;
+      &__title {
+        text-align: left;
+      }
+      &__text {
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+      }
+      &__link {
+      padding-right: 1.8em;
+        a {
+        }
+      }
+    }
+  }
+}

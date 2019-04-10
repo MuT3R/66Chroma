@@ -1,0 +1,181 @@
+// Phone
+.single-creation {
+  &__title {
+    margin: auto;
+    width: 60%;
+    color: $color-tri;
+    font-weight: 900;
+  }
+  &__image {
+    img { width: 100%; height: 100%;}
+  }
+  &__text {
+    padding: 0.5em 0.5em;
+  }
+  &__link {
+    text-align: right;
+    padding-right: 1.2em;
+  }
+
+}
+
+
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .single-creation {
+    display: block;
+    &__title {
+      margin: auto;
+      width: 40%;
+      color: $color-tri;
+      font-weight: 900;
+    }
+    &__image {
+      width: 100%;
+      img { width: 100%; height: 100%;}
+    }
+    &__text {
+      width: 100%;
+      padding: 1em 1em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+    }
+  
+  }
+}
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .single-creation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+      margin: 0;
+      width: none;
+      font-size: 22px;
+      color: $color-tri;
+      font-weight: 900;
+    }
+    &__image {
+      width: 50%;
+      img { width: 100%; height: 100%;}
+    }
+    &__text {
+      width: 30%;
+      font-size: 15px;
+      padding: 1em 1em;
+      margin-right: 6em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+    }
+  
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .single-creation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+      margin: 0;
+      width: none;
+      font-size: 22px;
+      color: $color-tri;
+      font-weight: 900;
+    }
+    &__image {
+      width: 50%;
+      img { width: 100%; height: 100%;}
+    }
+    &__text {
+      width: 30%;
+      font-size: 15px;
+      padding: 1em 1em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+    }
+  
+  }
+}
+
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .single-creation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3em;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+      margin: 0;
+      margin-bottom: 10px;
+      width: none;
+      font-size: 30px;
+      color: $color-tri;
+      font-weight: 900;
+    }
+    &__image {
+      width: 40%;
+      img { width: 100%; height: 100%;}
+    }
+    &__text {
+      width: 50%;
+      font-size: 15px;
+      padding: 1em 1em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+    }
+  
+  }
+}
+
+// Desktop 4k
+@media (min-width: $breakpoint-4k) {
+  .single-creation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6em;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+      margin: 0;
+      margin-bottom: 10px;
+      width: none;
+      font-size: 30px;
+      color: $color-tri;
+      font-weight: 900;
+    }
+    &__image {
+      width: 40%;
+      img { width: 100%; height: 100%;}
+    }
+    &__text {
+      width: 50%;
+      font-size: 15px;
+      padding: 1em 1em;
+    }
+    &__link {
+      text-align: right;
+      padding-right: 1.2em;
+    }
+  
+  }
+}

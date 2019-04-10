@@ -1,0 +1,21 @@
+// Sortie du mobile , passage tablette
+$breakpoint-medium: 500px; 
+// Sortie du tablette , passage desktop
+$breakpoint-large: 900px;
+// comportement laptop 1024
+$breakpoint-xl : 1100px;
+// Comportement laptop 1440
+$breakpoint-xxl: 1400px;
+// Sortie du laptop , passage desktop
+$breakpoint-4k: 2000px;
+// Taille de la police
+$font-size: 16px;
+$font-size-medium: 20px;
+$font-size-large: 24px;
+
+$color-prim:#8d193c;
+$color-sec:#662756;
+$color-tri: #661325;
+$color-black: #000000;
+$color-back-hover: #66132520;
+

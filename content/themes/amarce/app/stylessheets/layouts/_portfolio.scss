@@ -1,0 +1,196 @@
+// Phone
+.portfolio {
+  padding-top: 3.4em;
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    margin-left: 0.8em;
+    border-radius: 50%;
+    width: 30%;
+    height: 100%;
+  }
+  &__title  {
+    margin-left: 0.8em;
+    color: $color-sec;
+    font-weight: 900;
+    padding-top: 1.2em;
+  }
+  &__text {
+    padding: 0.2em 1.8em;
+  }
+}
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-top: 1.2em;
+  padding-left: 0.8em;
+  padding-bottom: 2.4em;
+  border-bottom: 2px solid $color-tri;
+  
+  &:last-child {
+  border-bottom: none;
+  }
+  .gallery-portfolio {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    &:hover {
+      transform: scale(0.97);
+      
+    }
+    img {
+      -webkit-box-shadow: 0 4px 4px #777;
+      -moz-box-shadow: 0 4px 4px #777;
+      box-shadow: 0 4px 4px #777;
+      width: 100%;
+      height: 100%;
+      padding: 0.5em;
+    }
+
+  }
+}
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .portfolio {
+
+    img {
+      margin-left: 3.8em;
+      width: 25%;
+    }
+    &__title  {
+
+    }
+    &__text {
+      padding-top: 1.5em
+    }
+  }
+  .gallery-content {
+    padding-left: 3.8em;
+    .gallery-portfolio {
+
+  
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 0.5em;
+      }
+  
+    }
+  }
+}
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .portfolio {
+    padding-top: 4.4em;
+    img {
+      margin-left: 7.8em;
+      width: 20%;
+    }
+    &__title  {
+
+    }
+    &__text {
+      padding: 2.2em 3.8em;
+
+    }
+  }
+  .gallery-content {
+    padding-left: 7.2em;
+    padding-bottom: 4.4em;
+    .gallery-portfolio {
+      width: 330px;
+      height: 310px;
+  
+      img {
+
+      }
+  
+    }
+  }
+}
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .portfolio {
+
+    img {
+      margin-left: 3.8em;
+      width: 15%;
+    }
+    &__title  {
+      padding-top: 2em;
+    }
+    &__text {
+      padding: 3.2em 4.8em;
+
+    }
+  }
+  .gallery-content {
+
+    .gallery-portfolio {
+
+  
+      img {
+
+      }
+  
+    }
+  }
+}
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .portfolio {
+    padding-left: 2em;
+    padding-right: 8em;
+    img {
+    }
+    &__title  {
+
+    }
+    &__text {
+      padding: 4.2em 6.8em;
+
+    }
+  }
+  .gallery-content {
+    padding-left: 8.2em;
+    padding-right: 2.2em;
+    .gallery-portfolio {
+  
+      img {
+
+      }
+  
+    }
+  }
+}
+
+// 4k 
+@media (min-width: $breakpoint-4k) {
+  .portfolio {
+
+    img {
+      width: 10%;
+    }
+    &__title  {
+
+    }
+    &__text {
+
+
+    }
+  }
+  .gallery-content {
+    padding-left: 8.2em;
+    padding-right: 8.2em;
+    .gallery-portfolio {
+
+  
+      img {
+
+      }
+  
+    }
+  }
+}

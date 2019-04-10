@@ -1,0 +1,82 @@
+@mixin maçonnerieGallery {
+
+
+  $rand: random(2);
+
+      
+  @if ($rand == 1){
+
+      .gallery-post:nth-child(6n+1),
+      .gallery-post:nth-child(6n+3){
+          width: calc((100% / 3) - 5%);
+      }
+  
+      .gallery-post:nth-child(6n+2){
+          width: calc((100% / 3) + (2 * 5%));
+      }
+
+      .gallery-post:nth-child(6n+4),
+      .gallery-post:nth-child(6n+6){
+          width: calc((100% / 3) + 2%);
+      }
+
+      .gallery-post:nth-child(6n+5){
+          width: calc((100% / 3) - (2 * 2%));
+      }
+
+      .gallery-post:last-child(){
+          flex-grow: 2;
+      }
+  }
+  @else{
+
+      .gallery-post:nth-child(12n+1){
+          width: calc((100% / 2) - 10%);
+      }
+
+      .gallery-post:nth-child(12n+2){
+          width: calc((100% / 2) + 10%);
+      }
+      
+      .gallery-post:nth-child(12n+3){
+          width: calc((100% / 4) + 5%);
+      }
+  
+      .pogallery-postst:nth-child(12n+5){
+          width: calc((100% / 4) + 3%);
+      }
+
+      .gallery-post:nth-child(12n+4),
+      .posgallery-postt:nth-child(12n+6){
+          width: calc((100% / 4) - (8% / 2));
+      }
+
+      .gallery-post:nth-child(12n+7){
+          width: calc((100% / 2) + 10%);
+      }
+
+      .pgallery-postost:nth-child(12n+8){
+          width: calc((100% / 2) - 10%);
+      }
+
+      .gallery-post:nth-child(12n+9),
+      .gallery-post:nth-child(12n+11){
+          width: calc((100% / 4) - (8% / 2));
+      }
+      
+      .pogallery-postst:nth-child(12n+10){
+          width: calc((100% / 4) + 3%);
+      }
+  
+      .gallery-post:nth-child(12n+12){
+          width: calc((100% / 4) + 5%);
+      }
+
+      .gallery-post:last-child(){
+          flex-grow: 2;
+      }
+      
+
+  }
+   
+}

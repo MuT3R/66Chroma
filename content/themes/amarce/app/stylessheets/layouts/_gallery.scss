@@ -1,0 +1,51 @@
+.gallery-posts {
+
+  .gallery-post {
+
+    &__image {
+      position: relative;
+      &:hover {
+        transform: scale(0.97);
+      }
+      img {
+        width: 100%;
+        height: 25%;
+  
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width: $breakpoint-medium) {
+  .gallery-posts {
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    .gallery-post {
+      width: calc((100% / 3) - 4px);
+      &__image {
+        img {
+          width: 100%;
+          height: 25%;   
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .gallery-posts {
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    .gallery-post {
+      width: calc((100% / 3) - 4px);
+      // @include maçonnerieGallery;
+      
+    }
+  }
+}

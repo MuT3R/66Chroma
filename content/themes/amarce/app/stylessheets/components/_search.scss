@@ -1,0 +1,123 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1.5em;
+  width: 100%;
+  &__label {
+    margin: auto;
+    padding-top: 1.2em;
+    border-bottom: 2px solid $color-tri;
+    width: 45%;
+  }
+  &__field {
+    margin: auto;
+    margin-top: 1.2em;
+    border: none;
+    width: 46%;
+    margin-bottom: 1.2em;
+    border-bottom: 2px solid $color-tri;
+    border-radius: 0 0 0 0;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .search {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+
+    &__label {
+
+      width: 41%;
+    }
+    &__field {
+
+      width: 42%;
+
+      
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    &__label {
+
+      width: 28%;
+    }
+    &__field {
+
+      width: 29%;
+
+      
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    &__label {
+
+      width: 20%;
+    }
+    &__field {
+
+      width: 20%;
+
+      
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    &__label {
+
+      width: 20%;
+    }
+    &__field {
+
+      width: 20%;
+
+      
+    }
+  }
+}
+
+@media (min-width: $breakpoint-4k) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+    &__label {
+
+      width: 12%;
+    }
+    &__field {
+
+      width: 12%;
+
+      
+    }
+  }
+}

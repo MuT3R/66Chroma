@@ -1,0 +1,103 @@
+// Phone
+
+.social-nav {
+  padding-top: 2em;
+  width: 90%;
+  margin: auto;
+  font-size: 25px;
+  ul {
+    display: flex;
+    li {
+      margin-right: 2em;
+      font-size: 22px;
+      &:hover {
+        transform: scale(0.97);
+        
+      }
+    }
+  }
+}
+
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .social-nav {
+    padding-top: 2em;
+    width: 50%;
+    margin: auto;
+    ul {
+      display: flex;
+      li {
+        margin-right: 2em;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .social-nav {
+    padding-top: 2em;
+    width: 44%;
+    margin: auto;
+    ul {
+      display: flex;
+      li {
+        margin-right: 2em;
+        font-size: 30px;
+
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .social-nav {
+    padding-top: 2em;
+    width: 44%;
+    margin: auto;
+    ul {
+      display: flex;
+      li {
+        margin-right: 2em;
+        font-size: 32px;
+
+      }
+    }
+  }
+} 
+
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .social-nav {
+    padding-top: 2em;
+    margin: auto;
+    width: 36%;
+
+    ul {
+      display: flex;
+      li {
+        margin-right: 2em;
+
+      }
+    }
+  }
+} 
+
+// Desktop x1000 $_$
+@media (min-width: $breakpoint-4k) {
+  .social-nav {
+    padding-top: 2em;
+    margin: auto;
+    width: 25%;
+
+    ul {
+      display: flex;
+      li {
+        margin-right: 2em;
+
+      }
+    }
+  }
+}

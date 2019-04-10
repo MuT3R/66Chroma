@@ -1,0 +1,24 @@
+.mentions_legales {
+  background-color: darken(white, 5%);
+  height: 20vh;
+  text-align: center;
+  padding-top: 2.0em;
+  color: white;
+  p {
+    width: 80%;
+    margin: auto;
+    padding: 0.5em;
+    color: $color-prim;
+    border-bottom: 1px solid $color-prim;
+    a {
+      padding-left: 10px;
+      font-weight: 900;
+      display: inline-block;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+

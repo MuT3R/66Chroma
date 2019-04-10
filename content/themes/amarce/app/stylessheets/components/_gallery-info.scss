@@ -1,0 +1,90 @@
+// Phone 
+.gallery-info {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  &__type {
+    display: flex;
+    p {
+      margin-right: 5px;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+    }
+  }
+  &__customField {
+    display: flex;
+    font-size: 12px;
+    .gallery-info-download {
+      margin-left: 5px;
+    }
+  }
+  &__addMarket {
+    font-size: 0.8em;
+    background-color: $color-tri;
+    border: none;
+  }
+}
+
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .gallery-info {
+
+    &__type {
+      
+      p {
+
+      }
+    }
+    &__customField {
+      font-size: $font-size;
+    }
+    &__addMarket {
+      font-size: 0.6em;
+    }
+  }
+}
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .gallery-info {
+    padding-left: 1em;
+    &__type {
+      
+      p {
+        font-size: $font-size;
+      }
+    }
+    &__customField {
+
+    }
+  }
+}
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .gallery-info {
+    padding-left: 0;
+
+    &__type {
+
+      p {
+
+      }
+    }
+    &__customField {
+
+    }
+  }
+}
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .gallery-info {
+
+    &__type {
+
+      p {
+
+      }
+    }
+    &__customField {
+
+    }
+  }
+}

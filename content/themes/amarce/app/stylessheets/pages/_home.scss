@@ -1,0 +1,40 @@
+body {
+
+  margin-top: 2.2rem;
+
+  &.image-visible {
+    .overlay {
+      visibility: visible;
+    }
+    .wrapper {
+      filter: blur(8px);
+    }
+  }
+  #wpadminbar {
+    position: fixed;
+    li#wp-admin-bar-wp-logo { display: none;}
+    form#adminbarsearch { display: none;}
+  
+  }
+
+}
+
+
+@media (min-width: $breakpoint-medium) {
+
+  #wpadminbar {
+
+    position: fixed;
+
+  }
+
+}
+
+
+hr {
+  background-color: $color-tri;
+  height: 5px;
+  margin: 100px auto;
+  width: 100%;
+}
+

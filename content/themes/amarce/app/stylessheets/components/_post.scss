@@ -1,0 +1,136 @@
+// Mobile First
+.post {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 25vh;
+    position: relative;
+    z-index: 10;
+    border: 0.1rem solid #ffffff;
+    &::after{
+      content: '';
+      background-color: #00000080; 
+      position: absolute;
+        top: 0;
+        right: 0; 
+        bottom: 0; 
+        left: 0;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+      z-index: -1;
+    }
+    &:hover::after{
+      background-color: #00000040; 
+    }
+    
+    p{
+      margin: 1rem 0;
+    }
+
+    h3{
+
+      margin:0;
+      font-size: 1.1rem;
+
+    }
+}
+
+
+// Mobile First
+.post-content{
+
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  position: absolute;
+  width:100%;
+  padding: 0.5rem;
+  
+  &__title{
+    font-weight: 700;
+    text-align: center;  
+  }
+  &__text {
+    text-align: center;      
+  
+    width: 80%;
+
+  }
+  &__link {
+    color: #e9e5e5;
+    font-size: $font-size-medium;
+    font-weight: 700;
+    display: block;
+    transition-duration: 0.3s;
+    transition-property: all;
+    margin-left: 60%;
+    &:hover {
+      transform: scale(1.06);
+      color: #ffffff;
+      letter-spacing: 0.05rem;
+
+
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium)  {
+  .post {
+    padding: 30px 10px;
+    margin-bottom: 0.3em;
+
+    .post-content {      
+      position: initial;
+      font-size: $font-size;
+      width:100%;
+      &__title {
+
+      }
+      &__text {
+        
+      }
+      &__link {
+
+      }
+    }
+  }
+}
+    
+
+@media (min-width: $breakpoint-large) {
+  .post {
+    padding: 30px 10px;
+    margin-bottom: 0em;
+    display: flex;
+    transition-duration: $duration-medium;
+    transition-property: all;
+
+    .post-content {      
+      position: initial;
+      align-self: flex-end;
+      // margin-top: 35%;
+      font-size: $font-size;     
+      width:100%;
+      &__title {
+
+      }
+      &__text {
+        
+      }
+      &__link {
+
+       }
+     }
+
+    }
+    .post:hover{
+      transform: scale(0.98);
+      z-index: 100;
+    }
+  }
+
+ 

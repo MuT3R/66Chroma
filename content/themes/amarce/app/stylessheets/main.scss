@@ -1,0 +1,50 @@
+@import
+   "../../node_modules/bootstrap/scss/bootstrap"; 
+
+@import
+  'abstract/animations',
+  'abstract/mixins',
+  'abstract/mixinsGallery',
+  'abstract/variables';
+
+@import
+  'layouts/posts',
+  'layouts/gallery',
+  'layouts/portfolio',
+  'layouts/portfolioNews',
+  'layouts/single-creation',
+  'layouts/legalePage',
+  'layouts/header',
+  'layouts/banner',
+  'layouts/login',
+  'layouts/register',
+  'layouts/footer';
+
+@import
+  'components/404',
+  'components/navbar',
+  'components/news',
+  'components/comments',
+  'components/description',
+  'components/gallery-info',
+  'components/slide',
+  'components/connectRegister',
+  'components/search',  
+  'components/post',
+  'components/contact',
+  'components/social',
+  'components/social-nav',
+  'components/mentions';
+  
+@import
+  'base/base',
+  'base/typo';
+  
+@import 
+  'pages/home';
+
+@import 
+  'shame';
+  
+    
+

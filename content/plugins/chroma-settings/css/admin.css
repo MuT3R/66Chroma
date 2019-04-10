@@ -1,0 +1,26 @@
+body {
+  background-color: #b3b0b0;
+  
+}
+
+#wpadminbar {
+  background-color: #4f5357;
+}
+
+#adminmenuback {
+  background-color: #4f5357;
+}
+
+#adminmenuwrap {
+  background-color: #4f5357;
+}
+
+#adminmenu {
+  background-color: #4f5357;
+}
+
+li#wp-admin-bar-wp-logo { display: none;}
+/* .wrap > * > * > *{
+  background-color:  #555050;
+
+} */

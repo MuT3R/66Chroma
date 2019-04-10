@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+html {
+  font-size: $font-size;
+  @media (min-width: $breakpoint-medium) {
+    font-size: $font-size-medium;
+  }
+  @media (min-width: $breakpoint-large) {
+    font-size: $font-size-large;
+  }
+  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat' , sans-serif;
+}

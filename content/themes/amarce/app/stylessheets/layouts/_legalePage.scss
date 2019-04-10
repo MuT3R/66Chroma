@@ -1,0 +1,109 @@
+// phone
+.posts-legale {
+  margin-top: 5em; // a modife en fonction de la banner de thallium
+  .legale-content {
+    &__title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: $color-tri;
+    }
+    &__text {
+      text-align: center;
+      padding: 1em 1em;
+      h2, h3 {
+      font-weight: 700;
+      
+      font-size: 1.2rem;
+      background-color: darken(white, 2.5%);
+      }
+      p {
+        text-align: left;
+
+      }
+    }
+  }
+}
+
+
+// tablette
+@media (min-width: $breakpoint-medium) {
+  .posts-legale {
+    .legale-content {
+      &__title {
+  
+      }
+      &__text {
+        padding: 2em;
+        h2, h3 {
+          display: inline-block;
+          font-weight: 500;
+          
+          margin: auto;
+          margin-bottom: 15px;
+          padding: 1em;
+          border-bottom: 1px solid $color-tri;
+        }
+      }
+    }
+  }
+}
+// laptop
+@media (min-width: $breakpoint-large) {
+  .posts-legale {
+    .legale-content {
+      &__title {
+        font-size: 1.5rem;
+  
+      }
+      &__text {
+        padding: 1em 3em;
+        h2, h3 {
+          margin-bottom: 25px;
+          margin-top: 50px;
+
+        }
+      }
+    }
+  }
+}
+// laptop ++
+@media (min-width: $breakpoint-xl) {
+  .posts-legale {
+    .legale-content {
+      &__title {
+  
+      }
+      &__text {
+  
+      }
+    }
+  }
+}
+// desktop 
+@media (min-width: $breakpoint-xxl) {
+  .posts-legale {
+    .legale-content {
+      &__title {
+  
+      }
+      &__text {
+  
+      }
+    }
+  }
+}
+// 4k
+@media (min-width: $breakpoint-4k) {
+  .posts-legale {
+    .legale-content {
+      &__title {
+  
+      }
+      &__text {
+        padding: 4em 12em;
+  
+      }
+    }
+  }
+}

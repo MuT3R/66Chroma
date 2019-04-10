@@ -1,0 +1,116 @@
+.description {
+  font-size: 1.0rem;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 1.5em;
+  
+  &__title {
+    padding: 0.4em 0.4em;
+    color: $color-tri;
+  }
+  &__text {
+    
+    padding: 0 5px 0 10px;
+    line-height: 1.4em;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+
+    
+  .description {
+  font-size: $font-size-medium; 
+  padding-top: 1.2em;
+  
+    &__title {
+
+    }
+
+    &__text {
+
+    }
+  }
+
+}
+
+@media (min-width: $breakpoint-large) {
+
+    
+  .description {
+  font-size: $font-size-large; 
+  text-align: center; 
+  padding-top: 1.1em;
+  width: 60%;
+  margin: auto;
+
+    &__title {
+      font-size: $font-size-large;
+    }
+
+    &__text {
+      font-size: $font-size;
+
+    }
+  }
+
+}
+
+@media (min-width: $breakpoint-xl) {
+
+    
+  .description {
+  font-size: $font-size-large; 
+  text-align: center; 
+  padding-top: 1.1em;
+
+    &__title {
+      font-size: $font-size-medium;
+    }
+
+    &__text {
+      font-size: $font-size;
+
+    }
+  }
+
+}
+
+@media (min-width: $breakpoint-xxl) {
+
+    
+  .description {
+  font-size: $font-size-large; 
+  text-align: center; 
+  padding-top: 1.1em;
+
+    &__title {
+      font-size: $font-size-large;
+    }
+
+    &__text {
+      font-size: $font-size-medium;
+
+    }
+  }
+
+}
+
+@media (min-width: $breakpoint-4k) {
+
+    
+  .description {
+  font-size: $font-size-large; 
+  text-align: center; 
+  padding-top: 1.1em;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: $font-size-large;
+
+    }
+  }
+
+}

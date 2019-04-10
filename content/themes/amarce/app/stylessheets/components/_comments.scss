@@ -1,0 +1,145 @@
+// Mobile
+.comments-section {
+  padding-left: 1.2em;
+  padding-top: 1.2em;
+  border-top: 2px solid black;
+
+  .comments-responses {
+    h2 {
+      color: $color-tri;
+      font-weight: 900;
+    }
+    .commentlist {
+      list-style: none;
+      padding: 1.8em 0;
+      li {
+        padding: 1.2em 0;
+      }
+    }
+  }
+  h2 {
+  color: $color-tri;
+  font-weight: 900;
+  }
+  form {
+        p {
+          textarea {
+            resize: none;
+            padding: 0.2em 0.4em;
+            border-top: none;
+            border-bottom: 2px solid #661325;;
+            border-left: 2px solid #661325;
+            border-right: none;
+          }
+          input {
+            background-color: #661325;
+            width: 25%;
+            border: 0px;
+            border-radius: 5px;
+            font-weight: 700;
+            padding: 0.8em 0.8em;
+            transition-duration: 0.3s;
+            transition-property: all;
+          }
+        }
+      }  
+}
+
+
+// Tablette
+@media (min-width: $breakpoint-medium) {
+  .comments-section {
+    padding-left: 4.2em;
+    padding-right: 2.2em;
+    padding-top: 1.2em;
+    .comments-responses {
+      h2 {
+      }
+      .commentlist {
+        .comment-alt {
+  
+        }
+      }
+    }
+    h2 {  }
+    form {
+      p {
+        textarea {
+          border: 2px solid #661325;
+          width: 90%;
+          height: 20vh;
+        }
+        input {
+        padding: 0.6em 0.6em;
+
+        }
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: $breakpoint-large) {
+  .comments-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    .comments-responses {
+      h2 {
+      }
+      .commentlist {
+        li {
+          width: 90%;
+        }
+      }
+    }
+    form {
+      p {
+        textarea {
+          border: 2px solid #661325;
+          width: 90%;
+          height: 20vh;
+        }
+        input {
+        padding: 0.4em 0.4em;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-xl) {
+  .comments-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+// Desktop ++
+@media (min-width: $breakpoint-xxl) {
+  .comments-section {
+
+  }
+}
+
+// Desktop 4K
+@media (min-width: $breakpoint-4k) {
+  .comments-section {
+    form {
+      p {
+        textarea {
+          border: 2px solid #661325;
+          width: 40%;
+          height: 20vh;
+        }
+        input {
+        padding: 0.4em 0.4em;
+        }
+      }
+    }
+  }
+}

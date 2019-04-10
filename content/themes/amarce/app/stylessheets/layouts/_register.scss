@@ -1,0 +1,34 @@
+body.login {}
+body.login div#login {}
+body.login div#login h1 {
+  display: none;
+}
+body.login div#login h1 a {}
+.message, .register  { display: none;}
+body.login div#login form#registerform {
+  -webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+	box-shadow: 0 7px 4px #777;
+}
+body.login div#login form#registerform p {
+  color: $color-tri;
+}
+body.login div#login form#registerform #reg_passmail {
+  font-size: 14px;
+}
+body.login div#login form#registerform p label {}
+body.login div#login form#registerform input {}
+body.login div#login form#registerform input#user_login {}
+body.login div#login form#registerform input#user_pass {}
+body.login div#login form#registerform p.forgetmenot {}
+body.login div#login form#registerform p.forgetmenot input#rememberme {}
+body.login div#login form#registerform p.submit {}
+body.login div#login form#registerform p.submit input#wp-submit {
+  background-color: black;
+  border: none;
+  text-shadow: none;
+}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}

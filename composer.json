@@ -1,0 +1,32 @@
+{
+    "name": "mint/two",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.0",
+        "wpackagist-theme/twentynineteen": "*",
+        "wpackagist-plugin/advanced-custom-fields": "*",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "*"
+    },
+    "require-dev": {
+        "wpackagist-plugin/what-the-file": "*",
+        "wpackagist-plugin/simply-show-hooks": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    },
+    "authors": [
+        {
+            "name": "MuT3R",
+            "email": "Kmauerhofer@gmail.com"
+        }
+    ]
+}
