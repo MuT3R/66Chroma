@@ -1,0 +1,6 @@
+/wp-config.php
+/deploy/env
+/deploy/data
+/vendor
+/wp
+/secrets.php
