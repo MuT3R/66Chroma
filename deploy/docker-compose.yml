@@ -1,0 +1,54 @@
+version: '2'
+services:
+  front:
+    build:
+      context: ./php-apache
+      args:
+        - GIT_REPO=${GIT_REPO}
+        - GIT_USER=${GIT_USER}
+        - GIT_PASSWORD=${GIT_PASSWORD}
+        - GIT_BRANCH=${GIT_BRANCH}
+    environment:
+        - DATABASE_NAME
+        - DATABASE_USER
+        - DATABASE_PASSWORD
+        - DATABASE_HOST
+        - DATABASE_PORT
+        - SECRET_WORDPRESS_API
+        - DEBUG_MODE
+        - WP_HOME
+        - WP_SITEURL
+        - MIGRATE_FROM
+        - MIGRATE_TO
+    volumes:
+        - ../:/var/www/html
+    depends_on:
+          - mysql
+    extra_hosts:
+      - "mysql:172.24.66.11"
+    ports:
+      - "8080:80"
+    networks:
+      chroma_net:
+          ipv4_address: "172.24.66.10"
+
+  mysql:
+    build: ./mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+    volumes:
+        - ./data/mysql:/var/lib/mysql
+    networks:
+      chroma_net:
+            ipv4_address: "172.24.66.11"
+
+networks:
+    chroma_net:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.24.66.0/24
