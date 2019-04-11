@@ -56,7 +56,7 @@
 			<!-- If comments are open, but there are no comments. -->
 		<?php else : // comments are closed ?>
 			<!-- If comments are closed. -->
-			<p class="nocomments">Les commentaires ne sont pas ouvert.</p>
+			<p class="nocomments">Vous devez vous connecter pour publier un commentaire.</p>
 		<?php endif; ?>
 	<?php endif; ?>
 	<?php if ('open' == $post->comment_status) : ?>

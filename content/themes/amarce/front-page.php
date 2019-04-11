@@ -38,7 +38,7 @@
 
     
     
-    <h2 class="news-title">Les news.</h2>
+    <h2 class="news-title">Les news</h2>
 
     
     <section class="posts">
