@@ -22,7 +22,7 @@ services:
         - MIGRATE_TO
     volumes:
         - ../:/var/www/html
-        - /home/letsencrypt/certs:/etc/apache2/ssl/
+        - /home/letsencrypt/certs/live/66chroma.azsystem.fr:/etc/apache2/ssl/
         - /home/letsencrypt/data:/var/www/ssldata/
     depends_on:
           - mysql
