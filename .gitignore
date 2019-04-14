@@ -4,3 +4,4 @@
 /vendor/
 /wp/
 /secrets.php
+/deploy/php-apache/ssl/*
