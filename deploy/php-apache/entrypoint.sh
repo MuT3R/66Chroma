@@ -8,6 +8,8 @@ function replace_in_parameters {
     key=$2
     value=$3
 
+    echo "replace $file with $key $value"
+
     sed -i "s,${key},${value},g" "${file}"
 }
 
@@ -40,7 +42,6 @@ WP_PARAM_FILE="/var/www/html/wp/wp-config.php"
 
 cp /var/www/html/wp-config.php.dist "${WP_PARAM_FILE}"
 
-replace_in_parameters "${WP_PARAM_FILE}" "%wordpress_secrets_defines%" "$(curl ${SECRET_WORDPRESS_API})"
 replace_in_parameters "${WP_PARAM_FILE}" "%database_name%" "${DATABASE_NAME}"
 replace_in_parameters "${WP_PARAM_FILE}" "%database_user%" "${DATABASE_USER}"
 replace_in_parameters "${WP_PARAM_FILE}" "%database_password%" "${DATABASE_PASSWORD}"
@@ -73,7 +74,7 @@ fi
 # Get new secrets
 
 echo "<?php" > /var/www/html/secrets.php
-curl /var/www/html/secrets.php "${SECRET_WORDPRESS_API}" >> /var/www/html/secrets.php
+curl "${SECRET_WORDPRESS_API}" >> /var/www/html/secrets.php
 
 
 # Migrate URLs if needed
@@ -85,7 +86,7 @@ echo "Migrate posts guid urls from ${MIGRATE_FROM} to ${MIGRATE_TO}"
 mysql -u${DATABASE_USER} \
 -p${DATABASE_PASSWORD} \
 -h${DATABASE_HOST} ${DATABASE_NAME} \
--e"UPDATE chroma_posts SET guid = REPLACE(guid, '${MIGRATE_FROM}', '${MIGRATE_TO}') WHERE guid LIKE '%${MIGRATE_TO%}';"
+-e"UPDATE chroma_posts SET guid = REPLACE(guid, '${MIGRATE_FROM}', '${MIGRATE_TO}') WHERE guid LIKE '%${MIGRATE_FROM}%}';"
 
 echo "Migrate postmeta urls from ${MIGRATE_FROM} to ${MIGRATE_TO}"
 
