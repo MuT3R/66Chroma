@@ -30,8 +30,8 @@ COPY default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
 
 RUN mkdir -p /etc/apache2/ssl
 
-COPY ssl/apache.crt /etc/apache2/ssl/
-COPY ssl/apache.key /etc/apache2/ssl/
+#COPY ssl/apache.crt /etc/apache2/ssl/
+#COPY ssl/apache.key /etc/apache2/ssl/
 #COPY ports.conf /etc/apache2/ports.conf
 
 RUN mkdir -p /var/www/ssldata
