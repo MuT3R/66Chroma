@@ -23,7 +23,7 @@ services:
     volumes:
         - ../:/var/www/html
         - /home/letsencrypt/certs:/etc/apache2/ssl/
-        - /home/letsencrypt/data:/var/www/ssldata/.well-known
+        - /home/letsencrypt/data:/var/www/ssldata/
     depends_on:
           - mysql
     extra_hosts:
