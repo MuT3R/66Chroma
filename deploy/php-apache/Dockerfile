@@ -11,8 +11,7 @@ ENV DATABASE_PASSWORD ''
 ENV DATABASE_HOST 'mysql'
 
 
-RUN a2enmod rewrite
-
+RUN a2enmod rewrite ssl headers
 
 RUN apt-get update && \
 apt-get install -y git wget libzip-dev zlib1g-dev mysql-client  libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
@@ -27,8 +26,20 @@ apt-get autoremove --purge && rm -rf /var/lib/apt/lists/*
 COPY timezone.ini /usr/local/etc/php/conf.d/
 COPY entrypoint.sh /tools/entrypoint.sh
 COPY apache_default.conf /etc/apache2/sites-available/000-default.conf
+COPY default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
+
+RUN mkdir -p /etc/apache2/ssl
+
+COPY ssl/apache.crt /etc/apache2/ssl/
+COPY ssl/apache.key /etc/apache2/ssl/
+#COPY ports.conf /etc/apache2/ports.conf
+
+RUN mkdir -p /var/www/ssldata
+
+RUN a2ensite default-ssl
+
 RUN chmod a+x /tools/entrypoint.sh
 
 ENTRYPOINT ["/tools/entrypoint.sh"]
-EXPOSE 80
+EXPOSE 80 443
 CMD ["apache2-foreground"]
