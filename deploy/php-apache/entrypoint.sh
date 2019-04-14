@@ -86,7 +86,7 @@ echo "Migrate posts guid urls from ${MIGRATE_FROM} to ${MIGRATE_TO}"
 mysql -u${DATABASE_USER} \
 -p${DATABASE_PASSWORD} \
 -h${DATABASE_HOST} ${DATABASE_NAME} \
--e"UPDATE chroma_posts SET guid = REPLACE(guid, '${MIGRATE_FROM}', '${MIGRATE_TO}') WHERE guid LIKE '%${MIGRATE_FROM}%}';"
+-e"UPDATE chroma_posts SET guid = REPLACE(guid, '${MIGRATE_FROM}', '${MIGRATE_TO}')';"
 
 echo "Migrate postmeta urls from ${MIGRATE_FROM} to ${MIGRATE_TO}"
 
