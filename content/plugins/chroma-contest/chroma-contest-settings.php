@@ -11,7 +11,5 @@ if (!defined('WPINC')) {die();}
 
 
 require plugin_dir_path(__FILE__) .'classes/Contest.php';
+$Contest =  new Contest;
 
-
-
-$contest =  new Contest();

@@ -94,10 +94,10 @@ if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_pos
     </article>
     <?php endwhile; wp_reset_postdata(); endif; ?>
     
-    <!-- Ouvrir peushpeu
+        <!-- Ouvrir peushpeu
 
-        // get_template_part('template-parts/nav/social-nav'); 
-    
+        // get_template_part('template-parts/nav/social-nav');
+
     Fermer peushpeu -->
     <div class="gallery-content">
 
@@ -129,10 +129,10 @@ if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_pos
       
     </article>
     <?php endwhile; wp_reset_postdata(); endif; ?>
-    <!-- Ouvrir peushpeu
+        <!-- Ouvrir peushpeu
 
-        // get_template_part('template-parts/nav/social-nav'); 
-    
+        // get_template_part('template-parts/nav/social-nav');
+
     Fermer peushpeu -->
 
     <div class="gallery-content">
@@ -167,8 +167,8 @@ if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_pos
     <?php endwhile; wp_reset_postdata(); endif; ?>
         <!-- Ouvrir peushpeu
 
-        // get_template_part('template-parts/nav/social-nav'); 
-    
+        // get_template_part('template-parts/nav/social-nav');
+
     Fermer peushpeu -->
 
     <div class="gallery-content">

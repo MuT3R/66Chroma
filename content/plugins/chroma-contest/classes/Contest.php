@@ -1,13 +1,22 @@
 <?php
 
 class Contest {
+  
 
   private $contest_options;
 
   public function __construct()
   {
+    add_action('wp_loaded', array( $this,'my_redirect_page') );
     add_action( 'admin_menu', array( $this, 'contest_add_plugin_page' ) );
-		add_action( 'admin_init', array( $this, 'contest_page_init' ) );
+    add_action( 'admin_init', array( $this, 'contest_page_init' ) );
+  }
+  public function my_redirect_page() {
+    if(!empty($_POST['contest_name']) && !empty($_POST['contest_date']) && !empty($_POST['contest_description']) || isset($_POST['delete_form_submit'], $_POST['delete_id']) ) {
+      $url = '/Apotheose/Site-jeunes-artistes/wp/wp-admin/admin.php?page=Vos+concours';
+      wp_redirect( $url);
+    
+    }
   }
 
   public function contest_add_plugin_page() {
@@ -28,12 +37,23 @@ class Contest {
 
   }
 
+
+
   public function contest_create_admin_page() {
     $this->contest_options = get_option('contest_option_name');
+    
+
+
     ?>
     <!--Call of display -->
-    <div class="wrap">
-      <?php require_once __DIR__.'/../views/contest.php'?>
+    <div class="wrapper">
+
+      <?php
+
+       require_once __DIR__.'/../inc/router.php'
+       
+       ?>
+
     </div>
   <?php }
 
@@ -51,4 +71,6 @@ class Contest {
       'contest-admin' // page ???
     );
   }
+  
 }
+
