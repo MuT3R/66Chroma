@@ -25,8 +25,7 @@ class Contestdb {
   /*
   * SETTER
   */ 
-
-
+  
   private function set_contest_name($value){
 
     $this->contest_name;
@@ -52,12 +51,6 @@ class Contestdb {
     ]);
 
   }
-
-  // public function pass_id($id) {
-  //   if ($id == $this->get_contest_id()) {
-  //     return $this->delete_current_contest($id);
-  //   }
-  // }
   
   public function delete_current_contest($id) {
     global $wpdb;
@@ -138,14 +131,7 @@ class Contestdb {
     $keys = array_keys($all_id);
 
     return $keys;
-    
-    // TODO les listes/
-    // foreach($all_id as $contest_id) {
-    //   $id = $wpdb->get_col($wpdb->prepare("SELECT id FROM chroma_contest WHERE id='%d'", $contest_id));
-    //   // var_dump($contest_id);
-    //   var_dump($id[0]);
-    //   return $id[0];
-    // }
+   
   }
 
 }  
