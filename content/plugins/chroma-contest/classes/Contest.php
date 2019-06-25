@@ -15,7 +15,7 @@ class Contest {
     if(!empty($_POST['contest_name']) && !empty($_POST['contest_date']) && !empty($_POST['contest_description']) || isset($_POST['delete_form_submit'], $_POST['delete_id']) ) {
       $url = admin_url( "?page=Vos+concours" );
       
-      get_admin_url( $url);
+      wp_redirect( $url);
     
     }
   }
