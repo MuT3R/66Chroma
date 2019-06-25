@@ -13,9 +13,7 @@ class Contest {
   }
   public function my_redirect_page() {
     if(!empty($_POST['contest_name']) && !empty($_POST['contest_date']) && !empty($_POST['contest_description']) || isset($_POST['delete_form_submit'], $_POST['delete_id']) ) {
-      // https://66chroma.azsystem.fr/wp-admin/admin.php?page=Vos+concours <= déploiment
-      // /Apotheose/Site-jeunes-artistes/wp/wp-admin/admin.php?page=Vos+concours <= local
-      $url = 'https://66chroma.azsystem.fr/wp-admin/admin.php?page=Vos+concours';
+      $url = admin_url( "?page=Vos+concours" );
       
       get_admin_url( $url);
     
