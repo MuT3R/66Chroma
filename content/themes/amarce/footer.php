@@ -39,7 +39,7 @@
       </form> 
      
     </div>
-    <? endif; ?>
+    <?php endif; ?>
 
 
     <div class="mentions_legales">

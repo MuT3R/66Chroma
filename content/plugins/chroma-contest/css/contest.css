@@ -1,0 +1,145 @@
+/* 
+Font
+*/
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+
+/*
+wrapper
+*/
+.wrapper {
+  padding: 10px 5px;
+}
+
+/* 
+Box form wrapper
+*/
+
+.form-wrapper {
+  display: flex;
+    flex-direction: column;
+}
+.contest-title {
+  margin: auto;
+  padding: 1rem 0.5rem;
+
+}
+/* 
+contest form
+*/
+
+.contest-form {
+  background-color:#d3d0d0;
+  -webkit-box-shadow: 0 4px 4px #777;
+  -moz-box-shadow: 0 4px 4px #777;
+  box-shadow: 0 4px 4px #777;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2rem 2rem;
+  
+}
+
+/* 
+labels && input && select
+*/
+label {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input {
+  border-radius: 5px;
+}
+textarea {
+  border-radius: 5px;
+}
+
+/* 
+Error mssg
+*/
+.error-mssg {
+  margin: auto;
+    color: red;
+    font-weight: 900;
+}
+
+
+/* 
+contest-button
+*/
+.contest-button {
+  margin: auto;
+    margin-top: 0.5rem;
+}
+
+/* 
+--------------------------------------------------------------------------
+*/
+
+/* 
+contest wrapper 
+*/
+.contest-wrapper {
+  display: flex;
+    flex-direction: column;
+}
+
+/* 
+carte wrapper
+*/
+
+.carte-wrapper {
+  padding: 1rem 1rem;
+  display: flex; 
+  flex-wrap: wrap;      
+  align-items: flex-start;
+}
+
+/* 
+Carte view 2
+*/
+
+.carte {
+  display: flex;
+  margin-right: 5px;
+  background-color: #d3d0d0;
+  font-weight: 400;
+  width: 300px;
+  max-height: 600px;
+  flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1.5em;
+  text-align: left;
+  -webkit-box-shadow: 0 4px 4px #777;
+  -moz-box-shadow: 0 4px 4px #777;
+  box-shadow: 0 4px 4px #777;
+}
+
+/* 
+title
+*/
+.carte-title {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+
+/* 
+img
+*/
+
+img {
+  margin: auto;
+}
+
+span {
+  text-decoration: underline;
+}
